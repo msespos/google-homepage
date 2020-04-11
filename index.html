@@ -7,7 +7,8 @@
             ul {
                 list-style-type: none;
                 margin: 0;
-                padding: 20px;
+                height: 20px;
+                padding: 15px 0px 10px 0px;
             }
             li {
                 float: left;
@@ -28,28 +29,37 @@
             input {
                 line-height: 30px;
                 font-size: 16;
+                box-shadow: 2px 2px #d7d7d7;
             }
             button {
                 background-color: #f2f2f2;
                 font-size: 16px;
                 border: none;
                 padding: 12px 28px;
+                border-radius: 5%;
+                margin: 0px 5px 0px 5px;
             }
-            .bottom-navbar {
+            .link-left {
+                font-size: 14;
+            }
+            .link-right {
+                font-size: 14;
+                float: right;
+            }
+            #bottom-navbar {
                 background-color: #f0f0f0;
                 position: fixed;
                 bottom: 0;
                 width: 100%;
-                padding: 10px 10px;
             }
         </style>
     </head>
     <body>
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Store</a></li>
-            <li style="float: right;"><a href="#">Images</a></li>
-            <li style="float: right;"><a href="#">Gmail</a></li>    
+            <li class="link-left"><a href="#">About</a></li>
+            <li class="link-left"><a href="#">Store</a></li>
+            <li class="link-right"><a href="#">Images</a></li>
+            <li class="link-right"><a href="#">Gmail</a></li>    
         </ul> 
         <div style="width: 50%; padding: 100px 0px 0px 0px; margin: 0 auto; text-align: center">
             <img src="images/google-logo.png">
@@ -58,17 +68,17 @@
             <input size="50" type="text">
         </div>
         <div style="width: 50%; padding: 20px; margin: 0 auto; text-align: center">
-            <button type="button">Google Search</button> 
-            <button type="button">I'm Feeling Lucky</button> 
+            <button type="button"><a href="#">Google Search</a></button> 
+            <button type="button"><a href="#">I'm Feeling Lucky</a></button> 
         </div>
-        <div class="bottom-navbar">
+        <div id="bottom-navbar">
             <ul>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">How Search works</a></li>
-                <li style="float: right;"><a href="#">Settings</a></li>
-                <li style="float: right;"><a href="#">Terms</a></li>
-                <li style="float: right;"><a href="#">Privacy</a></li>
+                <li class="link-left"><a href="#">Advertising</a></li>
+                <li class="link-left"><a href="#">Business</a></li>
+                <li class="link-left"><a href="#">How Search works</a></li>
+                <li class="link-right"><a href="#">Settings</a></li>
+                <li class="link-right"><a href="#">Terms</a></li>
+                <li class="link-right"><a href="#">Privacy</a></li>    
             </ul>         
         </div>
     </body>
